@@ -1,0 +1,29 @@
+{
+    "items": [
+      {
+        "id": "ac6fb422-8926-490e-b89c-5b9426ef608b",
+        "checked": true,
+        "item": "Fresas"
+      },
+      {
+        "id": "1f45dc2f-0ba5-4df6-a83b-1e89a65c69b8",
+        "checked": false,
+        "item": "Pizza"
+      },
+      {
+        "id": "36217322-65ce-4f13-9536-cae55d513020",
+        "checked": false,
+        "item": "Patasca"
+      },
+      {
+        "id": "4d7a98df-9d07-481a-be12-c62fd5200c50",
+        "checked": false,
+        "item": "Violetas"
+      },
+      {
+        "id": "5b4b8205-b4a3-4691-b02c-308e91debb51",
+        "checked": false,
+        "item": "Rosas"
+      }
+    ]
+  }
