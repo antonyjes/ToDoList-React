@@ -24,6 +24,16 @@ function App() {
     setSearchResults(filteredResults.reverse());
   }, [items, search]);
 
+  const addItem = async(item) => {
+    try {
+      const response = await api.post('/items', item);
+      const itemsUpdated = [...items, response.data];
+      setItems(itemsUpdated);
+    } catch (error) {
+      console.log(error.message);
+    }
+  }
+
   const editItem = async (id, updatedItem) => {
     try {
       const response = await api.put(`/items/${id}`, updatedItem);
@@ -56,7 +66,7 @@ function App() {
           </div>
         )}
         {!fetchError && !isLoading && (
-          <Content items={searchResults} setSearch={setSearch} editItem={editItem}/>
+          <Content items={searchResults} setSearch={setSearch} editItem={editItem} addItem={addItem}/>
         )}
       </>
     </div>
