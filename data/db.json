@@ -7,13 +7,8 @@
     },
     {
       "id": "36217322-65ce-4f13-9536-cae55d513020",
-      "checked": true,
-      "task": "Promoción"
-    },
-    {
-      "id": "4d7a98df-9d07-481a-be12-c62fd5200c50",
       "checked": false,
-      "task": "Ver el Mundial"
+      "task": "Promoción"
     },
     {
       "id": "5b4b8205-b4a3-4691-b02c-308e91debb51",
@@ -27,13 +22,18 @@
     },
     {
       "id": "d4a53122-06ef-4b7b-88be-ac4b73cbc091",
-      "checked": false,
+      "checked": true,
       "task": "Limpiar las ventanas"
     },
     {
       "id": "69c70b7f-0faf-44b5-bc98-2f5706151373",
-      "checked": true,
+      "checked": false,
       "task": "Ajedrez"
+    },
+    {
+      "id": "935a1465-bdae-4375-a16f-ac3018d977f8",
+      "checked": true,
+      "task": "Ver series en Netflix"
     }
   ]
 }
