@@ -6,11 +6,6 @@
       "task": "Barrer"
     },
     {
-      "id": "1f45dc2f-0ba5-4df6-a83b-1e89a65c69b8",
-      "checked": false,
-      "task": "Bailar"
-    },
-    {
       "id": "36217322-65ce-4f13-9536-cae55d513020",
       "checked": true,
       "task": "Promoción"
@@ -31,23 +26,13 @@
       "task": "Ver la tele"
     },
     {
-      "id": "6604545b-5630-421e-a2e3-03b7797ed980",
-      "checked": false,
-      "task": "Trabajar duro"
-    },
-    {
       "id": "d4a53122-06ef-4b7b-88be-ac4b73cbc091",
       "checked": false,
       "task": "Limpiar las ventanas"
     },
     {
-      "id": "5489d140-316b-4707-a1a7-4c2b6049b328",
-      "checked": false,
-      "task": "No te demores"
-    },
-    {
       "id": "69c70b7f-0faf-44b5-bc98-2f5706151373",
-      "checked": false,
+      "checked": true,
       "task": "Ajedrez"
     }
   ]

@@ -39,7 +39,17 @@ function App() {
       const response = await api.put(`/items/${id}`, updatedItem);
       setItems(items.map((item)=>item.id === id ? {...response.data} : item));
     } catch (error) {
-      console.log(error.message)
+      console.log(error.message);
+    }
+  }
+
+  const deleteItem = async(id) => {
+    try {
+      await api.delete(`/items/${id}`);
+      const itemsUpdated = items.filter((item) => item.id !== id);
+      setItems(itemsUpdated);
+    } catch (error) {
+      console.log(error.message);
     }
   }
 
@@ -66,7 +76,7 @@ function App() {
           </div>
         )}
         {!fetchError && !isLoading && (
-          <Content items={searchResults} setSearch={setSearch} editItem={editItem} addItem={addItem}/>
+          <Content items={searchResults} setSearch={setSearch} editItem={editItem} addItem={addItem} deleteItem={deleteItem}/>
         )}
       </>
     </div>
