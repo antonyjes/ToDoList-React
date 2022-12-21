@@ -1,27 +1,41 @@
-import { useEffect, useState } from 'react';
-import useAxiosFetch from './hooks/useAxiosFetch';
-import './App.css';
-import Content from './components/Content';
-import Title from './components/Title';
+import { useEffect, useState } from "react";
+import useAxiosFetch from "./hooks/useAxiosFetch";
+import "./App.css";
+import Content from "./components/Content";
+import Title from "./components/Title";
+import api from "./api/items"
 
 function App() {
   const [items, setItems] = useState([]);
-  const [search, setSearch] = useState('');
+  const [search, setSearch] = useState("");
   const [searchResults, setSearchResults] = useState([]);
-  const {data, fetchError, isLoading} = useAxiosFetch('http://localhost:3500/items');
+  const { data, fetchError, isLoading } = useAxiosFetch(
+    "http://localhost:3500/items"
+  );
 
   useEffect(() => {
     setItems(data);
-  }, [data])
+  }, [data]);
 
   useEffect(() => {
-    const filteredResults = items.filter((item) => ((item.task).toLowerCase()).includes(search.toLowerCase()))
+    const filteredResults = items.filter((item) =>
+      item.task.toLowerCase().includes(search.toLowerCase())
+    );
     setSearchResults(filteredResults.reverse());
-  }, [items, search])
+  }, [items, search]);
+
+  const editItem = async (id, updatedItem) => {
+    try {
+      const response = await api.put(`/items/${id}`, updatedItem);
+      setItems(items.map((item)=>item.id === id ? {...response.data} : item));
+    } catch (error) {
+      console.log(error.message)
+    }
+  }
 
   return (
     <div className="App">
-      <Title title="TodoList - App"/>
+      <Title title="TodoList - App" />
       <>
         {isLoading && (
           <div
@@ -42,9 +56,7 @@ function App() {
           </div>
         )}
         {!fetchError && !isLoading && (
-          <Content
-            items={searchResults}
-          />
+          <Content items={searchResults} setSearch={setSearch} editItem={editItem}/>
         )}
       </>
     </div>

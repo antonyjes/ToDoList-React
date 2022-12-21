@@ -1,7 +1,7 @@
 import AddItem from "./AddItem";
 import Search from "./Search";
 
-const Content = ({ items }) => {
+const Content = ({ items, editItem }) => {
   return (
     <div className="py-10 h-screen bg-gray-300 px-2">
       <div className="max-w-md mx-auto bg-gray-100 shadow-lg rounded-lg overflow-hidden md:max-w-lg">
@@ -15,7 +15,7 @@ const Content = ({ items }) => {
                   <li className="flex justify-between items-center bg-white mt-2 p-2 hover:shadow-lg rounded transition"
                   key={item.id}>
                     <div className="flex ml-2">
-                      <input type="checkbox" checked={item.checked}/>
+                      <input type="checkbox" checked={item.checked} onChange={()=>editItem(item.id, {id: item.id, checked: !item.checked, task: item.task})}/>
                       <div className="flex ml-2">
                         <span className={`font-medium text-black ${item.checked ? 'line-through' : null}`}>
                           {item.task}
