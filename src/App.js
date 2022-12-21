@@ -4,6 +4,7 @@ import "./App.css";
 import Content from "./components/Content";
 import Title from "./components/Title";
 import api from "./api/items"
+import Footer from "./components/Footer";
 
 function App() {
   const [items, setItems] = useState([]);
@@ -79,6 +80,7 @@ function App() {
           <Content items={searchResults} setSearch={setSearch} editItem={editItem} addItem={addItem} deleteItem={deleteItem}/>
         )}
       </>
+      <Footer lenght={items.length}/>
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import AddItem from "./AddItem";
 import Search from "./Search";
+import '../styles/Content.css';
 
 const Content = ({ items, setSearch, editItem, addItem, deleteItem }) => {
   const [showModal, setShowModal] = useState(false);
@@ -27,7 +28,7 @@ const Content = ({ items, setSearch, editItem, addItem, deleteItem }) => {
 
   return (
     <>
-      <div className="py-10 h-screen bg-gray-300 px-2">
+      <div className="py-10 bg-gray-300 px-2 height-content">
         <div className="max-w-md mx-auto bg-gray-100 shadow-lg rounded-lg overflow-hidden md:max-w-lg">
           <div className="md:flex">
             <div className="w-full p-4">
@@ -110,6 +111,7 @@ const Content = ({ items, setSearch, editItem, addItem, deleteItem }) => {
                     type="text"
                     value={editTask}
                     onChange={(e) => setEditTask(e.target.value)}
+                    className="flex-auto w-80 h-12 rounded focus:outline-none px-3 focus:shadow-md bg-blue-50"
                   />
                 </div>
                 {/*footer*/}

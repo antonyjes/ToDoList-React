@@ -1,14 +1,9 @@
 {
   "items": [
     {
-      "id": "ac6fb422-8926-490e-b89c-5b9426ef608b",
-      "checked": false,
-      "task": "Barrer"
-    },
-    {
       "id": "36217322-65ce-4f13-9536-cae55d513020",
-      "checked": false,
-      "task": "Promoción"
+      "checked": true,
+      "task": "Promoción 2022"
     },
     {
       "id": "5b4b8205-b4a3-4691-b02c-308e91debb51",
@@ -16,24 +11,34 @@
       "task": "Lavar la ropa"
     },
     {
-      "id": "2e28bd1e-1ac8-44dc-8aa5-51f15a5c84d5",
-      "checked": false,
-      "task": "Ver la tele"
-    },
-    {
-      "id": "d4a53122-06ef-4b7b-88be-ac4b73cbc091",
-      "checked": true,
-      "task": "Limpiar las ventanas"
-    },
-    {
-      "id": "69c70b7f-0faf-44b5-bc98-2f5706151373",
-      "checked": false,
-      "task": "Ajedrez"
-    },
-    {
       "id": "935a1465-bdae-4375-a16f-ac3018d977f8",
-      "checked": true,
+      "checked": false,
       "task": "Ver series en Netflix"
+    },
+    {
+      "id": "debd5e62-800c-4e92-b646-d4cb1e1a8097",
+      "checked": false,
+      "task": "Ver el Mundial"
+    },
+    {
+      "id": "b469d0d4-a85c-4bba-bb8e-0999a6232943",
+      "checked": false,
+      "task": "Trabajo"
+    },
+    {
+      "id": "15d9bb20-6cb8-4eca-8b62-86b319b52edf",
+      "checked": false,
+      "task": "Work"
+    },
+    {
+      "id": "0b6e929c-002e-465d-b705-09f8cc5a6789",
+      "checked": false,
+      "task": "Travel"
+    },
+    {
+      "id": "3f908b68-9a56-4809-a597-6029bb8c2a68",
+      "checked": true,
+      "task": "Posicionarte"
     }
   ]
 }
