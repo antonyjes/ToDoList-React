@@ -4,15 +4,15 @@ import Search from "./Search";
 
 const Content = ({ items, setSearch, editItem, addItem, deleteItem }) => {
   const [showModal, setShowModal] = useState(false);
-  const [itemModal, setItemModal] = useState('')
-  const [editTask, setEditTask] = useState('')
+  const [itemModal, setItemModal] = useState("");
+  const [editTask, setEditTask] = useState("");
 
   const handleModal = (id) => {
     setShowModal(true);
     const myitem = items.filter((item) => item.id === id);
     setItemModal(myitem[0]);
-    setEditTask(myitem[0].task)
-  }
+    setEditTask(myitem[0].task);
+  };
 
   const handleEditModal = () => {
     const editTaskUpdate = {
@@ -23,7 +23,7 @@ const Content = ({ items, setSearch, editItem, addItem, deleteItem }) => {
 
     editItem(itemModal.id, editTaskUpdate);
     setShowModal(false);
-  }
+  };
 
   return (
     <>
@@ -63,8 +63,10 @@ const Content = ({ items, setSearch, editItem, addItem, deleteItem }) => {
                         </div>
                       </div>
                       <div className="flex items-center">
-                        <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mr-1"
-                        onClick={() => handleModal(item.id)}>
+                        <button
+                          className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded mr-1"
+                          onClick={() => handleModal(item.id)}
+                        >
                           Edit
                         </button>
                         <button
@@ -104,7 +106,11 @@ const Content = ({ items, setSearch, editItem, addItem, deleteItem }) => {
                 </div>
                 {/*body*/}
                 <div className="relative p-6 flex-auto">
-                  <input type="text" value={editTask} onChange={(e)=>setEditTask(e.target.value)}/>
+                  <input
+                    type="text"
+                    value={editTask}
+                    onChange={(e) => setEditTask(e.target.value)}
+                  />
                 </div>
                 {/*footer*/}
                 <div className="flex items-center justify-end p-6 border-t border-solid border-slate-200 rounded-b">
