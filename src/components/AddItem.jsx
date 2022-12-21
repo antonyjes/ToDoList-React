@@ -18,6 +18,7 @@ const AddItem = ({addItem}) => {
     };
 
     addItem(itemNew);
+    e.target.reset(); //Clear input
   }
 
   return (

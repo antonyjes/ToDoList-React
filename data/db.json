@@ -12,18 +12,43 @@
     },
     {
       "id": "36217322-65ce-4f13-9536-cae55d513020",
-      "checked": false,
+      "checked": true,
       "task": "Promoción"
     },
     {
       "id": "4d7a98df-9d07-481a-be12-c62fd5200c50",
-      "checked": true,
+      "checked": false,
       "task": "Ver el Mundial"
     },
     {
       "id": "5b4b8205-b4a3-4691-b02c-308e91debb51",
       "checked": false,
       "task": "Lavar la ropa"
+    },
+    {
+      "id": "2e28bd1e-1ac8-44dc-8aa5-51f15a5c84d5",
+      "checked": false,
+      "task": "Ver la tele"
+    },
+    {
+      "id": "6604545b-5630-421e-a2e3-03b7797ed980",
+      "checked": false,
+      "task": "Trabajar duro"
+    },
+    {
+      "id": "d4a53122-06ef-4b7b-88be-ac4b73cbc091",
+      "checked": false,
+      "task": "Limpiar las ventanas"
+    },
+    {
+      "id": "5489d140-316b-4707-a1a7-4c2b6049b328",
+      "checked": false,
+      "task": "No te demores"
+    },
+    {
+      "id": "69c70b7f-0faf-44b5-bc98-2f5706151373",
+      "checked": false,
+      "task": "Ajedrez"
     }
   ]
 }
